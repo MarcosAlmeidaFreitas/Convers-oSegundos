@@ -68,7 +68,8 @@ function calcular() {
       if (valorTotalHoras >= 1) resposta = resposta + `${Math.trunc(valorTotalHoras)} segundo(s) `;
       valorTotalHoras = 0;
     } else {
-      if (valorTotalHoras >= 1) resposta = resposta + `${Math.trunc(valorTotalHoras)} segundo(s) `;
+      if (valorTotalHoras >= 1) resposta = resposta + `${Math.trunc(Math.round(valorTotalHoras))} segundo(s) `;
+      console.log(valorTotalHoras)
     }
   }
 
